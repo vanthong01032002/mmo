@@ -15,19 +15,21 @@
     <meta property="og:description" content="Blog tin tức cập nhật những thông tin mới nhất">
     <meta property="og:image" content="og-image.jpg">
     <meta property="og:url" content="https://vanthong01032002.github.io/mmo/">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <nav class="navbar">
             <div class="logo">
-                <h1>Blog Tin Tức</h1>
+                <h1><i class="fas fa-newspaper"></i> Blog Tin Tức</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="#home">Trang chủ</a></li>
-                <li><a href="#news">Tin tức</a></li>
-                <li><a href="#tech">Công nghệ</a></li>
-                <li><a href="#business">Kinh doanh</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> Trang chủ</a></li>
+                <li><a href="#news"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+                <li><a href="#tech"><i class="fas fa-microchip"></i> Công nghệ</a></li>
+                <li><a href="#business"><i class="fas fa-chart-line"></i> Kinh doanh</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Liên hệ</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -35,58 +37,90 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <div class="hero-content">
+            <h1>Tin Tức Mới Nhất</h1>
+            <p>Cập nhật những thông tin mới nhất về công nghệ, kinh doanh và cuộc sống</p>
+        </div>
     </header>
 
     <main>
         <section class="featured-posts">
-            <h2>Bài viết nổi bật</h2>
+            <h2><i class="fas fa-star"></i> Bài viết nổi bật</h2>
             <div class="post-grid">
                 <article class="post-card">
-                    <img src="https://via.placeholder.com/400x250" alt="Featured post image">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643" alt="Featured post image">
+                        <div class="post-category">Công nghệ</div>
+                    </div>
                     <div class="post-content">
-                        <h3>Tiêu đề bài viết nổi bật 1</h3>
-                        <p class="post-meta">Ngày đăng: 01/01/2024 | Tác giả: Admin</p>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="#" class="read-more">Đọc thêm</a>
+                        <h3>Xu hướng công nghệ mới nhất năm 2024</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> 01/01/2024 | <i class="far fa-user"></i> Admin</p>
+                        <p class="post-excerpt">Khám phá những xu hướng công nghệ đột phá sẽ định hình tương lai trong năm 2024 và những năm tiếp theo.</p>
+                        <a href="#" class="read-more"><i class="fas fa-arrow-right"></i> Đọc thêm</a>
                     </div>
                 </article>
-                <!-- More featured posts will be added here -->
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="Featured post image">
+                        <div class="post-category">Kinh doanh</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Chiến lược kinh doanh thời đại số</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> 01/01/2024 | <i class="far fa-user"></i> Admin</p>
+                        <p class="post-excerpt">Những chiến lược kinh doanh hiệu quả trong thời đại chuyển đổi số và cách áp dụng chúng.</p>
+                        <a href="#" class="read-more"><i class="fas fa-arrow-right"></i> Đọc thêm</a>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section class="latest-posts">
-            <h2>Tin tức mới nhất</h2>
+            <h2><i class="fas fa-clock"></i> Tin tức mới nhất</h2>
             <div class="post-list">
                 <article class="post-item">
-                    <img src="https://via.placeholder.com/200x150" alt="Latest post image">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e" alt="Latest post image">
+                        <div class="post-category">Giáo dục</div>
+                    </div>
                     <div class="post-content">
-                        <h3>Tiêu đề bài viết mới nhất 1</h3>
-                        <p class="post-meta">Ngày đăng: 01/01/2024 | Tác giả: Admin</p>
-                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#" class="read-more">Đọc thêm</a>
+                        <h3>Phương pháp học tập hiệu quả trong thời đại số</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> 01/01/2024 | <i class="far fa-user"></i> Admin</p>
+                        <p class="post-excerpt">Khám phá những phương pháp học tập mới phù hợp với thời đại công nghệ số.</p>
+                        <a href="#" class="read-more"><i class="fas fa-arrow-right"></i> Đọc thêm</a>
                     </div>
                 </article>
-                <!-- More latest posts will be added here -->
+                <article class="post-item">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352" alt="Latest post image">
+                        <div class="post-category">Sức khỏe</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Chế độ dinh dưỡng khoa học cho người hiện đại</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> 01/01/2024 | <i class="far fa-user"></i> Admin</p>
+                        <p class="post-excerpt">Những lời khuyên về dinh dưỡng giúp bạn duy trì sức khỏe tốt trong cuộc sống hiện đại.</p>
+                        <a href="#" class="read-more"><i class="fas fa-arrow-right"></i> Đọc thêm</a>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
 
     <aside class="sidebar">
         <div class="widget">
-            <h3>Danh mục</h3>
+            <h3><i class="fas fa-folder"></i> Danh mục</h3>
             <ul>
-                <li><a href="#">Công nghệ</a></li>
-                <li><a href="#">Kinh doanh</a></li>
-                <li><a href="#">Giáo dục</a></li>
-                <li><a href="#">Sức khỏe</a></li>
+                <li><a href="#"><i class="fas fa-microchip"></i> Công nghệ</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Kinh doanh</a></li>
+                <li><a href="#"><i class="fas fa-graduation-cap"></i> Giáo dục</a></li>
+                <li><a href="#"><i class="fas fa-heartbeat"></i> Sức khỏe</a></li>
             </ul>
         </div>
         <div class="widget">
-            <h3>Bài viết phổ biến</h3>
+            <h3><i class="fas fa-fire"></i> Bài viết phổ biến</h3>
             <ul>
-                <li><a href="#">Bài viết phổ biến 1</a></li>
-                <li><a href="#">Bài viết phổ biến 2</a></li>
-                <li><a href="#">Bài viết phổ biến 3</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Bài viết phổ biến 1</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Bài viết phổ biến 2</a></li>
+                <li><a href="#"><i class="fas fa-angle-right"></i> Bài viết phổ biến 3</a></li>
             </ul>
         </div>
     </aside>
@@ -94,23 +128,23 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Về chúng tôi</h3>
+                <h3><i class="fas fa-info-circle"></i> Về chúng tôi</h3>
                 <p>Blog tin tức cập nhật những thông tin mới nhất về công nghệ, kinh doanh, và cuộc sống.</p>
             </div>
             <div class="footer-section">
-                <h3>Liên kết</h3>
+                <h3><i class="fas fa-link"></i> Liên kết</h3>
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Tin tức</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Liên hệ</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Theo dõi chúng tôi</h3>
+                <h3><i class="fas fa-share-alt"></i> Theo dõi chúng tôi</h3>
                 <div class="social-links">
-                    <a href="#" aria-label="Facebook">Facebook</a>
-                    <a href="#" aria-label="Twitter">Twitter</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
