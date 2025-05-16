@@ -1,0 +1,6 @@
+tunnel: mytunnel
+credentials-file: C:\Users\SGTPC\.cloudflared\e14cce3f-5964-42ae-a7b4-38f147ffda9d.json
+ingress:
+  - hostname: mmoshop.shop
+    service: http://localhost:5000
+  - service: http_status:404

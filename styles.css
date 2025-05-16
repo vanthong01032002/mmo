@@ -563,4 +563,395 @@ footer::before {
     padding: 0.2rem 0.5rem;
     border-radius: 12px;
     margin-left: 0.5rem;
+}
+
+/* Article Detail Page */
+.article-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.article-content {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.article-header {
+    padding: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+.article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.article-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.article-meta i {
+    color: var(--primary-color);
+}
+
+.article-title {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.article-featured-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.article-featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.article-featured-image:hover img {
+    transform: scale(1.05);
+}
+
+.article-body {
+    padding: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.article-body .lead {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.article-body h2 {
+    color: var(--secondary-color);
+    margin: 2rem 0 1rem;
+    font-size: 1.8rem;
+}
+
+.article-body p {
+    margin-bottom: 1.5rem;
+}
+
+.article-body ul {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+.article-body ul li {
+    margin-bottom: 0.5rem;
+}
+
+.article-body blockquote {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(52, 152, 219, 0.1);
+    border-left: 4px solid var(--primary-color);
+    font-style: italic;
+}
+
+.article-body blockquote cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.code-block {
+    margin: 2rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.code-block pre {
+    margin: 0;
+    padding: 1.5rem;
+    background: #2d2d2d;
+    overflow-x: auto;
+}
+
+.code-block code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
+.article-footer {
+    padding: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.share-buttons {
+    margin-bottom: 2rem;
+}
+
+.share-buttons h3 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.social-share {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-share a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-share a:hover {
+    transform: translateY(-3px);
+}
+
+.social-share .facebook {
+    background: #3b5998;
+}
+
+.social-share .twitter {
+    background: #1da1f2;
+}
+
+.social-share .linkedin {
+    background: #0077b5;
+}
+
+.social-share .whatsapp {
+    background: #25d366;
+}
+
+.author-bio {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(52, 152, 219, 0.05);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.author-bio img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.related-posts h3 {
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.related-post {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.related-post:hover {
+    transform: translateY(-5px);
+}
+
+.related-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.related-post h4 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.article-sidebar {
+    position: sticky;
+    top: 100px;
+}
+
+/* Responsive Design for Article Page */
+@media screen and (max-width: 768px) {
+    .article-container {
+        grid-template-columns: 1fr;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-featured-image {
+        height: 300px;
+    }
+
+    .article-meta {
+        gap: 1rem;
+    }
+
+    .author-bio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-bio img {
+        margin: 0 auto;
+    }
+}
+
+/* MMO Article Specific Styles */
+.pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.pros, .cons {
+    padding: 1.5rem;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pros h4, .cons h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pros h4 i {
+    color: #2ecc71;
+}
+
+.cons h4 i {
+    color: #e74c3c;
+}
+
+.pros ul, .cons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pros ul li, .cons ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.pros ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.cons ul li::before {
+    content: '×';
+    position: absolute;
+    left: 0;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.tip-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.tip-card h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.tip-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design for MMO Article */
+@media screen and (max-width: 768px) {
+    .pros-cons {
+        grid-template-columns: 1fr;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card {
+        padding: 1.5rem;
+    }
 } 
